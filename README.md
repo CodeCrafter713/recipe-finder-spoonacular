@@ -43,7 +43,7 @@ A Next.js application that helps users find recipes based on ingredients they ha
 - Responsive design with Tailwind CSS
 
 ## Deployment
-Deployed on Vercel: [Insert Vercel Link]
+Deployed on Vercel: [Link](https://recipe-finder-spoonacular-test.vercel.app/)
 
 ## Future Improvements
 - When I want to filter the result, we have to send the API request again. Normally, we filter the result in frontend after getting whole data but for this case, I thought that based on that criteria, there could be more result if we get from backend again.
