@@ -37,14 +37,17 @@ export async function getRecipeDetails(
     return {
       ...details,
       ingredients: details.extendedIngredients,
-      instructions: instructions[0]?.steps?.map((step: Step) => step.step) || [],
+      instructions:
+        instructions[0]?.steps?.map((step: Step) => step.step) || [],
       nutrition: {
         calories:
-          details.nutrition?.nutrients.find((n: Nutrient) => n.name === "Calories")
-            ?.amount || 0,
+          details.nutrition?.nutrients.find(
+            (n: Nutrient) => n.name === "Calories"
+          )?.amount || 0,
         protein:
-          details.nutrition?.nutrients.find((n: Nutrient) => n.name === "Protein")
-            ?.amount || 0,
+          details.nutrition?.nutrients.find(
+            (n: Nutrient) => n.name === "Protein"
+          )?.amount || 0,
         fat:
           details.nutrition?.nutrients.find((n: Nutrient) => n.name === "Fat")
             ?.amount || 0,

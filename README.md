@@ -46,6 +46,19 @@ A Next.js application that helps users find recipes based on ingredients they ha
 Deployed on Vercel: [Insert Vercel Link]
 
 ## Future Improvements
-- Add more advanced filtering
-- Implement user authentication
-- Create shopping list feature
+- When I want to filter the result, we have to send the API request again. Normally, we filter the result in frontend after getting whole data but for this case, I thought that based on that criteria, there could be more result if we get from backend again.
+- Also I give limitation of result to 10. We could increase if we need.
+
+## Development Process
+
+- Created empty Next.js project
+- Installed Tailwind CSS for styling
+- Got the API key from [Spoonacular](https://spoonacular.com)
+- Tested API key and response type using postman
+- Built dashboard UI and integrated getting recipe API
+- Added error handling process
+- Implemented detail view page
+
+
+## AI Usage
+About AI tool, I am using ChatGPT and I only use this tool if there is any issues or bugs while development. For writing code and integration, I think human's work is much valide and clean.
